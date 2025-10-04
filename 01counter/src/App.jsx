@@ -9,8 +9,19 @@ function App() {
   let [counter, setCounter] = useState(15);
 
   const addValue = () => {
-    if (counter + 1 <= 20) counter = counter + 1;
-    setCounter(counter);
+    /*
+    setCounter(counter + 1);
+    setCounter(counter + 1);
+    setCounter(counter + 1);
+    setCounter(counter + 1);
+    in this case if we click on addValue, the value will still increase by one not by 4
+    REASON : useState take the bunches of similar work , and then update
+    */
+    setCounter((prevCounter) => prevCounter + 1);
+    setCounter((prevCounter) => prevCounter + 1);
+    setCounter((prevCounter) => prevCounter + 1);
+    setCounter((prevCounter) => prevCounter + 1);
+    //now if we click on addValue , then val will increase by 4, as we are taking prev val every time
   };
 
   const removeValue = () => {
