@@ -27,3 +27,7 @@ const reactElement = {
 const mainContainer = document.querySelector("#root");
 
 customRender(reactElement, mainContainer);
+
+/*https://github.com/acdlite/react-fiber-architecture
+use this article to learn virtual dom, fibre, reconciliation
+*/
