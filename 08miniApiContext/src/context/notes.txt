@@ -1,0 +1,11 @@
+import React from 'react'
+const UserContext = React.createContext();
+//createContext is a method to create context
+export default UserContext;
+
+//we use wrapper -> fragments
+<UserContext>
+ //here we can return may things
+</UserContext>
+
+when we make contextProvider -> we have to make jsx file , as we make fragments , so jsx required
