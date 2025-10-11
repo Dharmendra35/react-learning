@@ -1,3 +1,7 @@
+context api is used for state management 
+not for more big project
+in large project -> we use redux ,like state management library
+
 import React from 'react'
 const UserContext = React.createContext();
 //createContext is a method to create context
